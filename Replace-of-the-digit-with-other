@@ -1,0 +1,36 @@
+import java.util.*;
+class Demo
+{
+public static void main(String args[])
+{
+int m,n,r,s=0;
+int k,l=0;
+Scanner t=new Scanner(System.in);
+m=t.nextInt();
+int x=t.nextInt();
+int y=t.nextInt();
+while(m>0)
+{
+	r=m%10;
+	m/=10;	
+if(r==x)
+{
+	r=y;}
+	s=s*10+r;
+	}
+	while(s>0)
+	{
+		k=s%10;
+		l=l*10+k;
+		s/=10;
+	}
+ System.out.print(l);
+
+}
+}
+Input:
+16178
+1
+9
+Output:
+96978
